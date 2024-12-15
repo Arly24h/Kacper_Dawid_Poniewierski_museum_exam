@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --gap-average: 3rem;
+  --gap-bigger: 4rem;
+
+  --color-standar: #f59e0b;
+  --color-black: black;
+  --color-white: white;
+  --color-main: #E6D1B4;
+  --color-holder: #533946;
+  --color-text: #E5E9D8;
+
+  --font-size-small-tittle: 2rem;
+  --font-size-average: 1.8rem;
+  --font-size-small: 1.2rem;
+  --font-size-main-text: 4rem;
+
+  --small-sapcer: 25px;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-main);
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-standar);
+  padding: 2rem;
+  width: 100%;
+}
+
+.nav-items {
+  display: flex;
+  gap: var(--gap-bigger);
+  flex-wrap: wrap;
+}
+
+
+.nav-items a {
+  color: var(--color-black);
+  text-decoration: none;
+  font-size: var(--font-size-average);
+}
+
+.footer {
+  background-color: var(--color-standar);
+  padding: 2rem;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-items {
+  display: flex;
+  gap: var(--gap-average);
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  color: var(--color-white);
+  background-color: gray;
+  padding: 175px;
+  opacity: 50%;
+  font-size: var(--font-size-main-text);
+  text-align: center;
+}
+
+.boxets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 2rem;
+  background-color: var(--color-main);
+  padding: 80px 10px 80px 10px;
+  justify-content: center;
+}
+
+@media (width <=645px) {
+  .nav-items {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-items {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (width <=460px) {
+  .boxets {
+    padding: 80px 10px 80px 0px;
+  }
+}
+
+.holder {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 20px;
+  background-color: var(--color-holder);
+  max-width: 210px;
+  color: var(--color-text);
+  font-size: var(--font-size-small);
+}
+
+.small-titel {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--font-size-small-tittle);
+  justify-content: center;
+  color: var(--color-black);
+  max-width: 210px;
+  text-align: center;
+  padding-bottom: var(--small-sapcer);
+}
